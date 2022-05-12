@@ -14,6 +14,7 @@
 		84CE8F11282D41BF00334309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CE8F10282D41BF00334309 /* Assets.xcassets */; };
 		84CE8F14282D41BF00334309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CE8F12282D41BF00334309 /* LaunchScreen.storyboard */; };
 		84CE8F1C282D66CA00334309 /* GreetingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE8F1B282D66CA00334309 /* GreetingPresenter.swift */; };
+		84CE8F1E282D83A000334309 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE8F1D282D83A000334309 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		84CE8F13282D41BF00334309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84CE8F15282D41BF00334309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CE8F1B282D66CA00334309 /* GreetingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingPresenter.swift; sourceTree = "<group>"; };
+		84CE8F1D282D83A000334309 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				84CE8F09282D41BD00334309 /* SceneDelegate.swift */,
 				84CE8F0B282D41BD00334309 /* MainViewController.swift */,
 				84CE8F1B282D66CA00334309 /* GreetingPresenter.swift */,
+				84CE8F1D282D83A000334309 /* Person.swift */,
 				84CE8F0D282D41BD00334309 /* Main.storyboard */,
 				84CE8F10282D41BF00334309 /* Assets.xcassets */,
 				84CE8F12282D41BF00334309 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CE8F1E282D83A000334309 /* Person.swift in Sources */,
 				84CE8F0C282D41BD00334309 /* MainViewController.swift in Sources */,
 				84CE8F08282D41BD00334309 /* AppDelegate.swift in Sources */,
 				84CE8F0A282D41BD00334309 /* SceneDelegate.swift in Sources */,

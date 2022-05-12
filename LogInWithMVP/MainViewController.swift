@@ -12,14 +12,14 @@ protocol MainViewProtocol {
 }
 
 class MainViewController: UIViewController {
-
+    
     @IBOutlet var greetingLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
+    
     @IBAction func enterButton() {
     }
     
@@ -29,7 +29,5 @@ extension MainViewController: MainViewProtocol {
     func setGreeting(_ greeting: String) {
         greetingLabel.text = greeting
     }
-    
-    
 }
 
