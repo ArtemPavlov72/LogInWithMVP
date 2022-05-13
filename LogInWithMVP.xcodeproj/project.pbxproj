@@ -60,17 +60,65 @@
 		84CE8F06282D41BD00334309 /* LogInWithMVP */ = {
 			isa = PBXGroup;
 			children = (
-				84CE8F07282D41BD00334309 /* AppDelegate.swift */,
-				84CE8F09282D41BD00334309 /* SceneDelegate.swift */,
-				84CE8F0B282D41BD00334309 /* MainViewController.swift */,
-				84CE8F1B282D66CA00334309 /* GreetingPresenter.swift */,
-				84CE8F1D282D83A000334309 /* Person.swift */,
-				84CE8F0D282D41BD00334309 /* Main.storyboard */,
-				84CE8F10282D41BF00334309 /* Assets.xcassets */,
-				84CE8F12282D41BF00334309 /* LaunchScreen.storyboard */,
-				84CE8F15282D41BF00334309 /* Info.plist */,
+				84CE8F1F282E436900334309 /* ViewControllers */,
+				84CE8F20282E437B00334309 /* Presenters */,
+				84CE8F21282E438200334309 /* Models */,
+				84CE8F22282E43A100334309 /* Storyboards */,
+				84CE8F24282E43CB00334309 /* App */,
+				84CE8F23282E43BB00334309 /* Resources */,
 			);
 			path = LogInWithMVP;
+			sourceTree = "<group>";
+		};
+		84CE8F1F282E436900334309 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84CE8F0B282D41BD00334309 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84CE8F20282E437B00334309 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				84CE8F1B282D66CA00334309 /* GreetingPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		84CE8F21282E438200334309 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84CE8F1D282D83A000334309 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84CE8F22282E43A100334309 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84CE8F0D282D41BD00334309 /* Main.storyboard */,
+				84CE8F12282D41BF00334309 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		84CE8F23282E43BB00334309 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84CE8F10282D41BF00334309 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84CE8F24282E43CB00334309 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				84CE8F07282D41BD00334309 /* AppDelegate.swift */,
+				84CE8F09282D41BD00334309 /* SceneDelegate.swift */,
+				84CE8F15282D41BF00334309 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
