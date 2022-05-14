@@ -2,7 +2,7 @@
 //  Person.swift
 //  LogInWithMVP
 //
-//  Created by admin  on 12.05.2022.
+//  Created by Artem Pavlov on 12.05.2022.
 //
 
 import Foundation

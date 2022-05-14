@@ -8,23 +8,26 @@
 import Foundation
 
 protocol GreetingPresenterProtocol {
-    init(view: MainViewProtocol, person: Person)
+    init(view: MainViewProtocol, personName: String, personSurname: String)
     func showGreeting()
 }
 
 class GreetingPresenter: GreetingPresenterProtocol {
-   
-    //MARK: - Public Properties
+
+    //MARK: - class init
     unowned let view: MainViewProtocol
-    let person: Person
+    let name: String
+    let surname: String
     
-    required init(view: MainViewProtocol, person: Person) {
+    required init(view: MainViewProtocol, personName: String, personSurname: String) {
         self.view = view
-        self.person = person
+        self.name = personName
+        self.surname = personSurname
     }
     
     //MARK: - Public Methods
     func showGreeting() {
+        let person = Person(name: name, surname: surname)
         let greetingText = "Hello, \(person.name) \(person.surname)!"
         view.setGreeting(greetingText)
     }

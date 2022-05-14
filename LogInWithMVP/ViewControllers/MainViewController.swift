@@ -12,8 +12,11 @@ protocol MainViewProtocol: AnyObject {
 }
 
 class MainViewController: UIViewController {
+  
     //MARK: - IB Outlets
     @IBOutlet var greetingLabel: UILabel!
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var secondNameTextField: UITextField!
     
     //MARK: - Private Properties
     private var presenter: GreetingPresenterProtocol!
@@ -21,12 +24,15 @@ class MainViewController: UIViewController {
     // MARK: - Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        let person = Person(name: "Artem", surname: "Pavlov")
-        presenter = GreetingPresenter(view: self, person: person)
     }
     
     // MARK: - IB Actions
     @IBAction func enterButton() {
+        presenter = GreetingPresenter(
+            view: self,
+            personName: nameTextField.text ?? "some one",
+            personSurname: secondNameTextField.text ?? ""
+        )
         presenter.showGreeting()
     }
 }
@@ -37,4 +43,3 @@ extension MainViewController: MainViewProtocol {
         greetingLabel.text = greeting
     }
 }
-
