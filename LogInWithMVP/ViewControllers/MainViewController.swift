@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
     @IBAction func enterButton() {
         presenter = GreetingPresenter(
             view: self,
-            personName: nameTextField.text ?? "some one",
+            personName: nameTextField.text ?? "",
             personSurname: secondNameTextField.text ?? ""
         )
         presenter.showGreeting()
