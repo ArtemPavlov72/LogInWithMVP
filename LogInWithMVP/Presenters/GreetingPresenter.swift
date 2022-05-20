@@ -13,11 +13,13 @@ protocol GreetingPresenterProtocol {
 }
 
 class GreetingPresenter: GreetingPresenterProtocol {
-
-    //MARK: - class init
+    
+    //MARK: - Private Properties
+    private let name: String
+    private let surname: String
+    
+    //MARK: - GreetingPresenter init
     unowned let view: MainViewProtocol
-    let name: String
-    let surname: String
     
     required init(view: MainViewProtocol, personName: String, personSurname: String) {
         self.view = view
@@ -25,10 +27,15 @@ class GreetingPresenter: GreetingPresenterProtocol {
         self.surname = personSurname
     }
     
-    //MARK: - Public Methods
     func showGreeting() {
-        let person = Person(name: name, surname: surname)
+        let person = getPerson()
         let greetingText = "Hello, \(person.name) \(person.surname)!"
         view.setGreeting(greetingText)
+    }
+    
+    //MARK: - Private Methods
+    private func getPerson() -> Person {
+        let person = Person(name: name, surname: surname)
+        return person
     }
 }
